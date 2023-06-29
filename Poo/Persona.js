@@ -7,13 +7,14 @@
 tener como mínimo 2 parámetros de entrada.*/
 
 class Persona {
-    constructor(pelo, altura, sexo, nacionalidad, peso, yearOfBirth){
+    constructor(pelo, altura, sexo, nacionalidad, peso, yearOfBirth, hobbies){
         this.pelo = pelo;
         this.altura = altura;
         this.sexo = sexo;
         this.nacionalidad = nacionalidad;
         this.peso = peso;
         this.yearOfBirth = yearOfBirth;
+        this.hobbies = hobbies;
     }
 /*Reto 2
 Utilizando la clase Person definida en el punto anterior, haz que se pueda calcular el IMC
@@ -34,10 +35,17 @@ atributos de la clase Person seguido por “-” y el valor del atributo. */
     printAll(){
         return "- " + this.pelo + " - " + this.altura + " - " + this.sexo + " - " + this.nacionalidad + " - " + this.peso + " - " + this.yearOfBirth;
     }
+/*Reto 5
+Añadir el atributo hobbies a la clase Person, que es un array de strings, y crear un método
+denominado printHobbies, que muestre por consola las aficiones de la persona. */
+    printHobbies(){
+        return this.hobbies;
+    }
 }
 
-let paco = new Persona("Rubio", 183, "M", "Griego", 80, 1985);
-console.log(paco.imc())
-console.log(paco.edad())
-console.log(paco.printAll())
+let paco = new Persona("Rubio", 183, "M", "Griego", 80, 1985, ["Bailar", "Cocinar", "Dormir"]);
+console.log(paco.imc());
+console.log(paco.edad());
+console.log(paco.printAll());
+console.log(paco.printHobbies());
 
