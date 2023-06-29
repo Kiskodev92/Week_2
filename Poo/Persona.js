@@ -28,9 +28,16 @@ como parámetro el año y calcule la edad de la persona. */
     edad(){
         return 2023 - this.yearOfBirth;
     }
+/*Reto 4
+Añadir un método que se denomine printAll que muestre por consola cada uno de los
+atributos de la clase Person seguido por “-” y el valor del atributo. */
+    printAll(){
+        return "- " + this.pelo + " - " + this.altura + " - " + this.sexo + " - " + this.nacionalidad + " - " + this.peso + " - " + this.yearOfBirth;
+    }
 }
 
 let paco = new Persona("Rubio", 183, "M", "Griego", 80, 1985);
 console.log(paco.imc())
 console.log(paco.edad())
+console.log(paco.printAll())
 
