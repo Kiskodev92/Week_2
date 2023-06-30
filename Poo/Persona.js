@@ -33,7 +33,7 @@ como parámetro el año y calcule la edad de la persona. */
 Añadir un método que se denomine printAll que muestre por consola cada uno de los
 atributos de la clase Person seguido por “-” y el valor del atributo. */
     printAll(){
-        return "- " + this.pelo + " - " + this.altura + " - " + this.sexo + " - " + this.nacionalidad + " - " + this.peso + " - " + this.yearOfBirth;
+        return "Pelo - " + this.pelo + " Altura - " + this.altura + " Sexo - " + this.sexo + " Nacionalidad - " + this.nacionalidad + " Peso - " + this.peso + " Fecha nacimiento - " + this.yearOfBirth;
     }
 /*Reto 5
 Añadir el atributo hobbies a la clase Person, que es un array de strings, y crear un método
@@ -44,8 +44,14 @@ denominado printHobbies, que muestre por consola las aficiones de la persona. */
 }
 
 let paco = new Persona("Rubio", 183, "M", "Griego", 80, 1985, ["Bailar", "Cocinar", "Dormir"]);
-console.log(paco.imc());
-console.log(paco.edad());
-console.log(paco.printAll());
-console.log(paco.printHobbies());
-
+// console.log(paco.imc());
+// console.log(paco.edad());
+// console.log(paco.printAll());
+// console.log(paco.printHobbies());
+/*Reto 6
+• Guardar la clase Person en un fichero con extensión .js (person.js).
+• Modificar ese fichero para exportar la clase.
+• Importar la clase en otro fichero denominado personTest.js.
+• Crear un objeto de la clase Persona y probar todos sus atributos y métodos.
+• Sube todos los cambios a tu rama “dia1”. */
+module.exports ={Persona};
