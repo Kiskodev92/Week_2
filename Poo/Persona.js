@@ -26,8 +26,8 @@ clase.*/
 /*Reto 3
 Añadir el atributo yearOfBirth a la clase Person e implementar el método edad que tome
 como parámetro el año y calcule la edad de la persona. */
-    edad(){
-        return 2023 - this.yearOfBirth;
+    edad(currentYear){
+        return currentYear - this.yearOfBirth;
     }
 /*Reto 4
 Añadir un método que se denomine printAll que muestre por consola cada uno de los
@@ -45,7 +45,7 @@ denominado printHobbies, que muestre por consola las aficiones de la persona. */
 let maria = new Persona("morena", 162, "F", "Portuguesa", 52, 1992, ["comer", "entrenar", "andar"]);
 let paco = new Persona("Rubio", 183, "M", "Griego", 80, 1985, ["Bailar", "Cocinar", "Dormir"]);
 // console.log(paco.imc());
-// console.log(paco.edad());
+// paco.edad(2023);
 // console.log(paco.printAll());
 // console.log(paco.printHobbies());
 /*Reto 6
