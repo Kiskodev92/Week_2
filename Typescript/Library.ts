@@ -1,5 +1,5 @@
 import {Book} from "./Book"
-class Library{
+export class Library{
     private books : Book[];
     private address : string;
     private manager : string;
