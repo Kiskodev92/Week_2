@@ -26,8 +26,8 @@ clase.*/
 /*Reto 3
 Añadir el atributo yearOfBirth a la clase Person e implementar el método edad que tome
 como parámetro el año y calcule la edad de la persona. */
-    edad(){
-        return 2023 - this.yearOfBirth;
+    edad(age){
+        return age - this.yearOfBirth;
     }
 /*Reto 4
 Añadir un método que se denomine printAll que muestre por consola cada uno de los
